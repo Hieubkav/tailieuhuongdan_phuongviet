@@ -20,11 +20,19 @@ Website tài liệu hướng dẫn sử dụng hệ thống quản trị tổng 
 ### Cài đặt dependencies
 ```bash
 cd docs-website
+# Khuyến nghị sử dụng bun (nhanh hơn)
+bun install
+
+# Hoặc sử dụng npm
 npm install
 ```
 
 ### Chạy development server
 ```bash
+# Với bun (khuyến nghị)
+bun run dev
+
+# Hoặc với npm
 npm run dev
 ```
 
@@ -32,8 +40,38 @@ Website sẽ chạy tại [http://localhost:3000](http://localhost:3000)
 
 ### Build cho production
 ```bash
+# Với bun
+bun run build
+bun run start
+
+# Hoặc với npm
 npm run build
 npm start
+```
+
+## 🚀 Deployment
+
+### Tự động deploy với GitHub Actions
+Dự án đã được cấu hình để tự động deploy lên Vercel:
+
+- **Push lên `main`**: Deploy production tự động
+- **Tạo Pull Request**: Deploy preview tự động + comment link
+
+### Setup GitHub Actions (Một lần duy nhất)
+1. **Thêm GitHub Secrets:**
+   - Vào repo → Settings → Secrets and variables → Actions
+   - Thêm: `VERCEL_TOKEN`, `VERCEL_PROJECT_ID`, `VERCEL_ORG_ID`
+   - Chi tiết: xem file `.github/SETUP_DEPLOYMENT.md`
+
+2. **Workflow sẽ tự động chạy** khi push code
+
+### Manual deploy (Tùy chọn)
+```bash
+# Cài Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel --prod
 ```
 
 ## 📝 Tính năng chính

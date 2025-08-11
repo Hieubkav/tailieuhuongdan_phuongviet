@@ -201,7 +201,7 @@ export function GlobalSearch() {
             </div>
           ) : query ? (
             <div className="p-8 text-center text-sm text-muted-foreground">
-              Không tìm thấy kết quả nào cho "{query}"
+              Không tìm thấy kết quả nào cho &quot;{query}&quot;
             </div>
           ) : (
             <div className="p-8 text-center text-sm text-muted-foreground">

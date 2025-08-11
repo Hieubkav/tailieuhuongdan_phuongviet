@@ -6,7 +6,7 @@ export interface DocumentData {
   slug: string
   title: string
   content: string
-  frontmatter: Record<string, any>
+  frontmatter: Record<string, unknown>
 }
 
 export function getDocumentBySlug(slug: string): DocumentData | null {

@@ -30,7 +30,7 @@ jobs:
         run: bun run lint
 
       - name: Type check
-        run: bun run build --dry-run || npx tsc --noEmit
+        run: npx tsc --noEmit
 
       - name: Build test
         run: bun run build

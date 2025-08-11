@@ -1,6 +1,5 @@
 import { DocsLayout } from '@/components/layout/docs-layout'
 import { MarkdownRenderer } from '@/components/markdown-renderer'
-import Image from 'next/image'
 
 export default function LoginPage() {
   const content = `

@@ -179,7 +179,7 @@ function MobileNav({ onLinkClick }: { onLinkClick: () => void }) {
               )}
             />
           </Button>
-          {isExpanded && (
+          {isExpanded && item.items && (
             <div className="ml-2 mt-1 space-y-1">
               {item.items.map(subItem => renderSidebarItem(subItem, level + 1))}
             </div>

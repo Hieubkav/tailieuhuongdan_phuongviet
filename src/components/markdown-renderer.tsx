@@ -8,7 +8,7 @@ import rehypeRaw from 'rehype-raw'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import { useState } from 'react'
-import { ImageDisplay } from '@/components/ui/image-display'
+
 import { rehypeImageWrapper } from '@/lib/rehype-image-wrapper'
 
 interface MarkdownRendererProps {
@@ -132,9 +132,13 @@ export function MarkdownRenderer({ content, className, images = [] }: MarkdownRe
             if (!src) return null
 
             return (
-              <img
+              <Image
                 src={src}
                 alt={alt || 'Hình ảnh minh họa'}
+                width={800}
+                height={600}
+                className="rounded-lg"
+                style={{ width: 'auto', height: 'auto' }}
                 {...props}
               />
             )
