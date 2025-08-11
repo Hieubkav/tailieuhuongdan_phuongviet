@@ -2,11 +2,11 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useState } from 'react'
+import { Menu, FileText, Users, Clock, DollarSign, ChevronRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetDescription } from '@/components/ui/sheet'
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { Menu, FileText, Users, Clock, DollarSign, ChevronRight } from 'lucide-react'
-import { useState } from 'react'
 import { GlobalSearch } from '@/components/search/global-search'
 import { cn } from '@/lib/utils'
 

@@ -1,9 +1,9 @@
+import Link from 'next/link'
+import { Users, Clock, DollarSign, FileText, ArrowRight } from 'lucide-react'
 import { DocsLayout } from '@/components/layout/docs-layout'
 import { MarkdownRenderer } from '@/components/markdown-renderer'
-import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Users, Clock, DollarSign, FileText, ArrowRight } from 'lucide-react'
 
 export default function DocsPage() {
   const content = `

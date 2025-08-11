@@ -1,14 +1,12 @@
 'use client'
 
-import React from 'react'
+import Image from 'next/image'
+import React, { useState } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeHighlight from 'rehype-highlight'
 import rehypeRaw from 'rehype-raw'
 import { cn } from '@/lib/utils'
-import Image from 'next/image'
-import { useState } from 'react'
-
 import { rehypeImageWrapper } from '@/lib/rehype-image-wrapper'
 
 interface MarkdownRendererProps {
@@ -128,18 +126,23 @@ export function MarkdownRenderer({ content, className, images = [] }: MarkdownRe
               {children}
             </em>
           ),
-          img: ({ src, alt, ...props }) => {
-            if (!src) return null
+          img: ({ src, alt, width, height, ...props }) => {
+            if (!src || typeof src !== 'string') return null
+
+            // Parse width and height to numbers if they're strings
+            const imgWidth = typeof width === 'string' ? parseInt(width) || 800 : (width as number) || 800
+            const imgHeight = typeof height === 'string' ? parseInt(height) || 600 : (height as number) || 600
 
             return (
               <Image
                 src={src}
                 alt={alt || 'Hình ảnh minh họa'}
-                width={800}
-                height={600}
-                className="rounded-lg"
+                width={imgWidth}
+                height={imgHeight}
+                className="rounded-lg max-w-full h-auto"
                 style={{ width: 'auto', height: 'auto' }}
-                {...props}
+                unoptimized={src.startsWith('http')} // For external images
+                {...(props as any)}
               />
             )
           },

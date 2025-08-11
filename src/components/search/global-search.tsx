@@ -2,12 +2,12 @@
 
 import { useState, useEffect, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
+import { Search, FileText, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { VisuallyHidden } from '@/components/ui/visually-hidden'
-import { Search, FileText, ArrowRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 interface SearchResult {

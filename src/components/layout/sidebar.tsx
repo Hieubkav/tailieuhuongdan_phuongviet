@@ -2,11 +2,11 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { cn } from '@/lib/utils'
-import { ScrollArea } from '@/components/ui/scroll-area'
-import { Button } from '@/components/ui/button'
-import { ChevronRight, FileText, Users, Clock, DollarSign } from 'lucide-react'
 import { useState } from 'react'
+import { ChevronRight, FileText, Users, Clock, DollarSign } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { ScrollArea } from '@/components/ui/scroll-area'
+import { cn } from '@/lib/utils'
 
 interface SidebarItem {
   title: string
@@ -131,7 +131,7 @@ export function Sidebar({ className }: SidebarProps) {
               )}
             />
           </Button>
-          {isExpanded && (
+          {isExpanded && item.items && (
             <div className="ml-2 mt-1 space-y-1">
               {item.items.map(subItem => renderSidebarItem(subItem, level + 1))}
             </div>
