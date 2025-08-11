@@ -4,7 +4,7 @@
   "description": "Website tài liệu hướng dẫn sử dụng hệ thống ERP - Phương Việt",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
