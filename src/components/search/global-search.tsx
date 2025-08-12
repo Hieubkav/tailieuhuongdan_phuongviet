@@ -28,6 +28,13 @@ const searchData: SearchResult[] = [
     highlight: 'đăng nhập'
   },
   {
+    title: 'Chức năng đăng xuất hệ thống',
+    content: 'Cho phép người dùng đăng xuất ra khỏi hệ thống khi không sử dụng. Tại giao diện trang chủ, người dùng chọn vào đăng xuất ra khỏi hệ thống.',
+    url: '/docs/login#2-chức-năng-đăng-xuất-hệ-thống',
+    section: 'Hướng dẫn cơ bản',
+    highlight: 'đăng xuất'
+  },
+  {
     title: 'Quản lý nhân viên',
     content: 'Quản lý thông tin nhân viên (thêm, sửa, xóa, hợp đồng, phiếu lương, đóng góp, phụ cấp, khoản vay)',
     url: '/docs/nhan-su/nhan-vien',

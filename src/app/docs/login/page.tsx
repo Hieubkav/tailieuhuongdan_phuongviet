@@ -5,58 +5,55 @@ export default function LoginPage() {
   const content = `
 # Chức năng đăng nhập hệ thống
 
-**Mục đích:** Cho phép người dùng đăng nhập vào hệ thống để sử dụng phần mềm.
+## 1.1. Mục đích
+Cho phép người dùng đăng nhập vào hệ thống để sử dụng phần mềm.
 
-**Đối tượng sử dụng:** Tất cả người dùng.
+## 1.2. Đối tượng sử dụng
+Tất cả người dùng có thể thao tác trên chức năng này.
 
-**Truy cập:** Tại địa chỉ: \`http://163.61.72.139/web/login\`.
+## 1.3. Truy cập chức năng
 
-**Ghi chú:** Sau khi đăng nhập, giao diện sẽ hiển thị các phân hệ tùy vai trò. Người dùng có thể vào **"Thông tin của tôi"** để cập nhật tên, mật khẩu, thông tin cá nhân.
+### Địa chỉ truy cập hệ thống
+Hệ thống phần mềm tại địa chỉ: \`http://163.61.72.139/web/login\`
 
-## Logo công ty
-
-Hệ thống hiển thị logo của Công ty TNHH Công nghệ Thông tin và Môi trường Phương Việt.
+### Giao diện đăng nhập
+Hệ thống hiển thị giao diện đăng nhập với các trường thông tin cần thiết:
 
 ![Logo Phương Việt](/images/01_logo_PV.png)
 
-## Giao diện đăng nhập
-
-Giao diện đăng nhập với các trường thông tin cần thiết.
-
 ![Giao diện đăng nhập](/images/02_dang_nhap_MinhDuc.png)
 
-## Hướng dẫn đăng nhập
+### Giao diện sau khi đăng nhập hệ thống
+Tùy theo vai trò người dùng mà hệ thống sẽ hiển thị các phân hệ theo đúng chức năng nhiệm vụ:
+
+![Trang chủ ERP](/images/03_trang_chu_erp.png)
+
+### Cập nhật thông tin cá nhân
+Ngoài ra, người dùng có thể cập nhật thông tin cá nhân, chọn vào chức năng **"Thông tin của tôi"** trên góc phải màn hình:
+
+![Menu tài khoản dropdown](/images/04_menu_tai_khoan_dropdown.png)
+
+Cập nhật các thông tin cần thiết, như tên, mật khẩu,...
+
+![Bảo mật tài khoản](/images/05_bao_mat_tai_khoan.png)
+
+## Hướng dẫn đăng nhập chi tiết
 
 1. **Truy cập hệ thống:** Mở trình duyệt và truy cập địa chỉ \`http://163.61.72.139/web/login\`
 2. **Nhập thông tin:** Điền tên đăng nhập và mật khẩu đã được cấp
 3. **Đăng nhập:** Nhấn nút "Đăng nhập" để vào hệ thống
 4. **Chuyển hướng:** Hệ thống sẽ tự động chuyển đến trang chủ
 
-## Trang chủ hệ thống
+# 2. Chức năng đăng xuất hệ thống
 
-Sau khi đăng nhập thành công, người dùng sẽ được chuyển đến trang chủ ERP.
+## 2.1. Mục đích
+Cho phép người dùng đăng xuất ra khỏi hệ thống khi không sử dụng.
 
-![Trang chủ ERP](/images/03_trang_chu_erp.png)
+## 2.2. Đối tượng sử dụng
+Tất cả người dùng có thể thao tác trên chức năng này.
 
-## Quản lý tài khoản
-
-### Menu tài khoản
-
-Người dùng có thể truy cập menu tài khoản để quản lý thông tin cá nhân.
-
-![Menu tài khoản dropdown](/images/04_menu_tai_khoan_dropdown.png)
-
-### Bảo mật tài khoản
-
-Giao diện để cập nhật thông tin bảo mật tài khoản.
-
-![Bảo mật tài khoản](/images/05_bao_mat_tai_khoan.png)
-
-## Chức năng đăng xuất
-
-**Mục đích:** Cho phép người dùng đăng xuất khi không sử dụng.
-
-**Thao tác:** Tại giao diện trang chủ, chọn **Đăng xuất** từ menu tài khoản.
+## 2.3. Truy cập chức năng
+Tại giao diện trang chủ, người dùng chọn vào đăng xuất ra khỏi hệ thống.
 
 ## Lưu ý quan trọng
 

@@ -81,6 +81,10 @@ const sidebarItems: SidebarItem[] = [
         title: 'Đăng nhập hệ thống',
         href: '/docs/login',
       },
+      {
+        title: 'Đăng xuất hệ thống',
+        href: '/docs/login#2-chức-năng-đăng-xuất-hệ-thống',
+      },
     ],
   },
   {
