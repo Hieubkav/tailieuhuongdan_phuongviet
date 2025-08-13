@@ -5,13 +5,13 @@ export default function LoginPage() {
   const content = `
 # Chức năng đăng nhập hệ thống
 
-## 1.1. Mục đích
+## 1.1. Mục đích {#muc-dich}
 Cho phép người dùng đăng nhập vào hệ thống để sử dụng phần mềm.
 
-## 1.2. Đối tượng sử dụng
+## 1.2. Đối tượng sử dụng {#doi-tuong-su-dung}
 Tất cả người dùng có thể thao tác trên chức năng này.
 
-## 1.3. Truy cập chức năng
+## 1.3. Truy cập chức năng {#truy-cap-chuc-nang}
 
 ### Địa chỉ truy cập hệ thống
 Hệ thống phần mềm tại địa chỉ: \`http://163.61.72.139/web/login\`
