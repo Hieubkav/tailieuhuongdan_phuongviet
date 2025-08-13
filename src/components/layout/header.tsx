@@ -3,13 +3,13 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
-import { Menu, FileText, Users, Clock, DollarSign, ChevronRight } from 'lucide-react'
+import { Menu, FileText, ChevronRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetDescription } from '@/components/ui/sheet'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { GlobalSearch } from '@/components/search/global-search'
-
 import { cn } from '@/lib/utils'
+import { sidebarItems, type SidebarItem } from '@/components/layout/sidebar-data'
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -60,16 +60,6 @@ export function Header() {
     </header>
   )
 }
-
-interface SidebarItem {
-  title: string
-  href?: string
-  icon?: React.ComponentType<{ className?: string }>
-  items?: SidebarItem[]
-}
-
-// Import sidebar items from a shared location to avoid duplication
-import { sidebarItems, type SidebarItem } from './sidebar-data'
 
 function MobileNav({ onLinkClick }: { onLinkClick: () => void }) {
   const pathname = usePathname()

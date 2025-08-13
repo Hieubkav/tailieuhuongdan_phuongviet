@@ -1,6 +1,6 @@
 'use client'
 
-import { ReactNode } from 'react'
+import React, { ReactNode } from 'react'
 import { cn } from '@/lib/utils'
 
 interface HeadingProps {
@@ -28,7 +28,7 @@ export function Heading({ level, children, className, id, ...props }: HeadingPro
   const { text, anchorId } = processChildren(children)
   const finalId = id || anchorId
 
-  const Component = `h${level}` as keyof JSX.IntrinsicElements
+  const Component = `h${level}` as keyof React.JSX.IntrinsicElements
 
   const baseClasses = {
     1: 'scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl',

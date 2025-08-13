@@ -3,12 +3,11 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
-import { ChevronRight, FileText, Users, Clock, DollarSign } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { ScrollArea } from '@/components/ui/scroll-area'
-
-import { sidebarItems, type SidebarItem } from './sidebar-data'
 import { cn } from '@/lib/utils'
+import { sidebarItems, type SidebarItem } from './sidebar-data'
 
 
 interface SidebarProps {

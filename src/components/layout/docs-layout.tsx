@@ -1,7 +1,7 @@
-import { Header } from './header'
-import { Sidebar } from './sidebar'
 import { SmoothScroll } from '../smooth-scroll'
 import { HeadingProcessor } from '../heading-processor'
+import { Header } from './header'
+import { Sidebar } from './sidebar'
 
 interface DocsLayoutProps {
   children: React.ReactNode
